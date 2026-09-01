@@ -4,34 +4,31 @@ Three-page static site for a self-serve nail-art printing vending machine busine
 No build step, no dependencies — plain HTML, one stylesheet, one small JS file.
 
 ```
-index.html        Home: hero, how it works, the machine, designs, locations, socials
+index.html        Home: hero, machine videos, how it works, the machine, designs, locations, socials
 nails.html        Nail designs: what it prints on, shapes, design families, aftercare
 locations.html    Machine locations, host-a-machine, and the rules & regulations (#rules)
 css/style.css     All styling
 js/main.js        Sticky header, mobile menu, scroll reveal (site works without it)
-assets/           Logo, circular badge, favicons
+assets/           Logo, circular badge, favicons, and supplied machine videos
 ```
 
 ## Before this goes live — things to replace
 
-Everything below is a placeholder. Each one is marked in the HTML with a
-`<!-- ⇩ REPLACE ... -->` comment directly above it.
-
 ### 1. Social media links — client asked for Facebook, TikTok and Instagram
 
-The handles were never supplied, so every social link is currently `href="#"`.
-There are six to update (three in the footer of each page, three in the social
-row on the home page). Search all three HTML files for:
+The handles were never supplied in the WhatsApp chat, so the home page shows
+"coming soon" social cards and the footer icons use the business email instead
+of broken placeholder links. When the profiles are available, replace those
+footer `mailto:` URLs and the home social cards with the real profile URLs.
+Example:
 
 ```
-href="#"
+https://www.instagram.com/jollynailprinting/
 ```
-
-Replace with the real profile URLs, e.g. `https://www.instagram.com/jollynailprinting/`.
 
 ### 2. Email address
 
-A placeholder address is used in five places. Search all three HTML files for:
+The site uses this address in the footers, contact buttons and JSON-LD:
 
 ```
 hello@jollynailprinting.com.au
@@ -42,20 +39,31 @@ If a phone number should be shown too, add it to the **Contact** list in each fo
 
 ### 3. Machine locations
 
-The three venue cards in `locations.html` use **invented venue names and addresses**
-as placeholders. For each one, replace:
+The WhatsApp chat says the exact mall address is on hold until confirmed, so
+`locations.html` currently uses a clear "coming soon" launch state. Once the
+mall is confirmed, replace:
 
 - the `<h3>` venue name
 - the `<address>` (venue line, then suburb / state / postcode)
 - the `Hours`, `Finding it` and `Payment` values in the `<dl>`
-- the Google Maps link — only the `query=` part needs changing
+- the mail/update link with a Google Maps link for the confirmed venue
 
 Status badge: `class="venue__status"` shows a green dot and "Now printing".
 Add `venue__status--soon` for a machine that is on the way, and change the
 label text to suit. Copy or delete a whole `<article class="venue">` block to
 add or remove machines — the grid reflows on its own.
 
-### 4. Figures worth confirming
+### 4. Videos
+
+The five videos supplied in the WhatsApp export are copied into:
+
+```
+assets/media/
+```
+
+They are embedded on the home page in the `#videos` section.
+
+### 5. Figures worth confirming
 
 These read as claims on the site and should match what the machines actually do:
 
