@@ -9,7 +9,7 @@ nails.html        Nail designs: what it prints on, shapes, design families, afte
 locations.html    Machine locations, host-a-machine, and the rules & regulations (#rules)
 css/style.css     All styling
 js/main.js        Sticky header, mobile menu, scroll reveal (site works without it)
-assets/           Logo, circular badge, favicons, and supplied machine videos
+assets/           Logo, favicons, supplied machine videos, and nail photography
 ```
 
 ## Before this goes live — things to replace
@@ -28,10 +28,11 @@ https://www.instagram.com/jollynailprinting/
 
 ### 2. Email address
 
-The site uses this address in the footers, contact buttons and JSON-LD:
+The client supplied this address on 1 September 2026. It is used in the footers,
+contact buttons and JSON-LD:
 
 ```
-hello@jollynailprinting.com.au
+jollynailprinting@gmail.com
 ```
 
 It also appears once inside the JSON-LD block at the top of `index.html`.
@@ -63,12 +64,16 @@ assets/media/
 
 They are embedded on the home page in the `#videos` section.
 
+The requested nail and finger photography is stored in `assets/nails/`. The
+homepage uses it in the catalogue cards and the nail page uses it for the seven
+named cat-eye and white-base sets.
+
 ### 5. Figures worth confirming
 
 These read as claims on the site and should match what the machines actually do:
 
-- Home page facts strip: **10** nails per session, **100+** designs, no booking, tap payment
-- "Sitting" spec: around **10–15 minutes** for a full set
+- Home page facts strip: **30 pieces** in a full set, **100+** designs, no booking, tap payment
+- "Sitting" spec: around **6 minutes** for a full 30-piece nail set
 - Nothing on the site quotes a price. Add one if wanted — the facts strip is the natural spot.
 
 ## Custom domain

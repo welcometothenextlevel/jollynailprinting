@@ -18,7 +18,7 @@
   --rose-300:       #C98F86;
   --rose:           #C98F86;
   --rose-deep:      #8E625C;
-  --rose-shadow:    #6d433e;
+  --rose-shadow:    #673b36;
 
   /* Brand pink */
   --pink:           #E8A6A0;
@@ -29,7 +29,7 @@
   --text-on-dark:   #F5EDEB;
   --muted-on-dark:  #d8c3be;
   --text-on-light:  #241a1d;
-  --muted-on-light: #6d5b57;
+  --muted-on-light: #493a37;
 
   --shell:          min(1220px, 100% - 2.75rem);
   --gold-gradient:  linear-gradient(103deg,#8E625C 0%,#C98F86 24%,#F5EDEB 48%,#E8A6A0 70%,#8E625C 100%);
@@ -50,7 +50,7 @@ body{
   font-family:"Jost",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   font-size:1.0625rem;
   line-height:1.72;
-  font-weight:300;
+  font-weight:400;
   letter-spacing:0;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
@@ -61,7 +61,7 @@ img{max-width:100%;height:auto;display:block;}
 a{color:inherit;text-decoration:none;}
 h1,h2,h3,h4{
   font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
-  font-weight:300;
+  font-weight:400;
   line-height:1.1;
   letter-spacing:0;
   margin:0;
@@ -450,6 +450,11 @@ ul,ol{margin:0;padding:0;list-style:none;}
 .section--light h2,.section--light h3{color:var(--text-on-light);}
 .section--light .eyebrow{color:var(--rose-shadow);}
 .section--light .eyebrow::before{background:linear-gradient(90deg,transparent,var(--rose-shadow));}
+.section--light .section__title em{
+  background:none;
+  color:var(--rose-shadow);
+  -webkit-text-fill-color:var(--rose-shadow);
+}
 
 .section__head{max-width:62ch;margin-bottom:clamp(2.75rem,5vw,4rem);}
 .section__head--center{margin-inline:auto;text-align:center;}
@@ -674,6 +679,22 @@ ul,ol{margin:0;padding:0;list-style:none;}
   color:var(--rose-deep);
   margin-bottom:1.25rem;
 }
+.section--light .card__tag{color:var(--rose-shadow);}
+
+.card__image{
+  display:block;
+  width:calc(100% + 4rem);
+  max-width:none;
+  aspect-ratio:4 / 3;
+  margin:-2.5rem -2rem 1.75rem;
+  object-fit:cover;
+  object-position:center;
+  border-bottom:1px solid var(--ink-line);
+}
+.card__image--left{object-position:left center;}
+.card__image--center{object-position:center;}
+.card__image--right{object-position:right center;}
+.section--light .card__image{border-bottom-color:rgba(142,98,92,.45);}
 
 /* A nail drawn in CSS — used as the small motif on design cards. */
 .nail{
