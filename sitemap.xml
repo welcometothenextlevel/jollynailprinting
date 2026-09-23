@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jollynailprinting.com.au/</loc>
+    <loc>https://welcometothenextlevel.github.io/jollynailprinting/</loc>
+    <lastmod>2026-09-23</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jollynailprinting.com.au/nails.html</loc>
+    <loc>https://welcometothenextlevel.github.io/jollynailprinting/nails.html</loc>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jollynailprinting.com.au/locations.html</loc>
+    <loc>https://welcometothenextlevel.github.io/jollynailprinting/locations.html</loc>
+    <lastmod>2026-09-23</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

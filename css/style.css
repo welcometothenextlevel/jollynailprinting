@@ -1013,3 +1013,6 @@ ul,ol{margin:0;padding:0;list-style:none;}
   .site-header,.nav-toggle,.cta,.social-row{display:none;}
   body{background:#fff;color:#000;}
 }
+
+.social-row--two{grid-template-columns:repeat(2,1fr);}
+@media (max-width:760px){.social-row--two{grid-template-columns:1fr;}}

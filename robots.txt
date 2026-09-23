@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jollynailprinting.com.au/sitemap.xml
+Sitemap: https://welcometothenextlevel.github.io/jollynailprinting/sitemap.xml

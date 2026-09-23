@@ -14,17 +14,33 @@ assets/           Logo, favicons, supplied machine videos, and nail photography
 
 ## Before this goes live — things to replace
 
-### 1. Social media links — client asked for Facebook, TikTok and Instagram
+### 1. Social media links
 
-The handles were never supplied in the WhatsApp chat, so the home page shows
-"coming soon" social cards and the footer icons use the business email instead
-of broken placeholder links. When the profiles are available, replace those
-footer `mailto:` URLs and the home social cards with the real profile URLs.
-Example:
+Supplied by the client on 16 September 2026 and wired into every footer, the
+home page "Follow along" row and the JSON-LD `sameAs` list:
 
-```
-https://www.instagram.com/jollynailprinting/
-```
+- Instagram: https://www.instagram.com/ygshopy/
+- TikTok: https://www.tiktok.com/@johnny7777740
+
+**Facebook is still missing** — no page was ever sent, so the Facebook icon was
+removed rather than left pointing nowhere. When the URL arrives, add it back to
+the three footers, the home social row (switch `social-row--two` back to
+`social-row`) and `sameAs`.
+
+### 1b. Google Analytics
+
+Set `GA_ID` at the top of `js/main.js` to the GA4 measurement ID (`G-XXXXXXXXXX`).
+While it is empty nothing is loaded.
+
+### 1c. Google search
+
+Canonical tags, Open Graph URLs, `sitemap.xml` and `robots.txt` point at the
+GitHub Pages address, because `jollynailprinting.com.au` (GoDaddy) is still
+showing a parking page. Pointing them at a parked domain stopped Google from
+indexing the live pages. When the domain is connected, search-and-replace
+`https://welcometothenextlevel.github.io/jollynailprinting/` back to
+`https://jollynailprinting.com.au/`, then submit the sitemap in Google Search
+Console.
 
 ### 2. Email address
 
@@ -72,7 +88,7 @@ named cat-eye and white-base sets.
 
 These read as claims on the site and should match what the machines actually do:
 
-- Home page facts strip: **30 pieces** in a full set, **100+** designs, no booking, tap payment
+- Home page facts strip: **30 pieces** in a full set, **100+** designs, no booking, cash or card
 - "Sitting" spec: around **6 minutes** for a full 30-piece nail set
 - Nothing on the site quotes a price. Add one if wanted — the facts strip is the natural spot.
 

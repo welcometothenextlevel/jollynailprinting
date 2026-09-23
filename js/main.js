@@ -3,6 +3,22 @@
 (function () {
   'use strict';
 
+  /* --- Google Analytics 4 ---
+     Paste the measurement ID from Google Analytics (Admin > Data streams),
+     e.g. 'G-AB12CD34EF'. Left empty, nothing is loaded. */
+  var GA_ID = '';
+
+  if (GA_ID) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_ID);
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(ga);
+  }
+
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* --- Header: switch to the solid state once the hero starts scrolling --- */
