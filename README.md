@@ -34,13 +34,13 @@ While it is empty nothing is loaded.
 
 ### 1c. Google search
 
-Canonical tags, Open Graph URLs, `sitemap.xml` and `robots.txt` point at the
-GitHub Pages address, because `jollynailprinting.com.au` (GoDaddy) is still
-showing a parking page. Pointing them at a parked domain stopped Google from
-indexing the live pages. When the domain is connected, search-and-replace
-`https://welcometothenextlevel.github.io/jollynailprinting/` back to
-`https://jollynailprinting.com.au/`, then submit the sitemap in Google Search
-Console.
+The domain went live on 1 October 2026 (GoDaddy A records -> GitHub Pages,
+`CNAME` file in the repo, HTTPS enforced). Canonical tags, Open Graph URLs,
+`sitemap.xml` and `robots.txt` all point at `https://jollynailprinting.com.au/`.
+
+Still to do: add the property in Google Search Console and submit
+`https://jollynailprinting.com.au/sitemap.xml`. Verification needs either the
+client's Google account or a `google-site-verification` meta tag in `index.html`.
 
 ### 2. Email address
 
