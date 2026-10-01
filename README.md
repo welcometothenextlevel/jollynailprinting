@@ -22,10 +22,7 @@ home page "Follow along" row and the JSON-LD `sameAs` list:
 - Instagram: https://www.instagram.com/ygshopy/
 - TikTok: https://www.tiktok.com/@johnny7777740
 
-**Facebook is still missing** — no page was ever sent, so the Facebook icon was
-removed rather than left pointing nowhere. When the URL arrives, add it back to
-the three footers, the home social row (switch `social-row--two` back to
-`social-row`) and `sameAs`.
+- Facebook: https://www.facebook.com/jollyshop77 (sent 1 October 2026)
 
 ### 1b. Google Analytics
 
