@@ -12,6 +12,11 @@ js/main.js        Sticky header, mobile menu, scroll reveal (site works without 
 assets/           Logo, favicons, supplied machine videos, and nail photography
 ```
 
+## URLs
+
+Links use clean paths (`/`, `/nails`, `/locations`); GitHub Pages serves the
+matching `.html` file. `js/main.js` strips `.html` from the address bar for old links.
+
 ## Before this goes live — things to replace
 
 ### 1. Social media links

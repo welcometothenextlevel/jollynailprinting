@@ -19,6 +19,13 @@
     document.head.appendChild(ga);
   }
 
+  /* --- Clean URLs: show /nails instead of /nails.html, / instead of /index.html.
+     Old links still work; this only tidies the address bar. --- */
+  if (window.history && history.replaceState && /\.html$/.test(location.pathname)) {
+    var clean = location.pathname.replace(/index\.html$/, '').replace(/\.html$/, '');
+    history.replaceState(null, '', clean + location.search + location.hash);
+  }
+
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* --- Header: switch to the solid state once the hero starts scrolling --- */
