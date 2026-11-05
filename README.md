@@ -58,14 +58,10 @@ If a phone number should be shown too, add it to the **Contact** list in each fo
 
 ### 3. Machine locations
 
-The WhatsApp chat says the exact mall address is on hold until confirmed, so
-`locations.html` currently uses a clear "coming soon" launch state. Once the
-mall is confirmed, replace:
-
-- the `<h3>` venue name
-- the `<address>` (venue line, then suburb / state / postcode)
-- the `Hours`, `Finding it` and `Payment` values in the `<dl>`
-- the mail/update link with a Google Maps link for the confirmed venue
+First site, supplied by the client on 5 November 2026: Pacific Werribee, 250 Heaths
+Rd, Hoppers Crossing VIC 3029, near Sportsgirl (he wrote "hearths rd" and "sport
+girls"). It is marked "Coming soon" because he said the location is almost settled;
+change it to "Now printing" once the machine is running.
 
 Status badge: `class="venue__status"` shows a green dot and "Now printing".
 Add `venue__status--soon` for a machine that is on the way, and change the
@@ -81,6 +77,9 @@ assets/media/
 ```
 
 They are embedded on the home page in the `#videos` section.
+
+`assets/nails/trays/` holds the real tray photos cropped from the client's product
+table. The originals are about 155px wide, so keep them as small thumbnails.
 
 The requested nail and finger photography is stored in `assets/nails/`. The
 homepage uses it in the catalogue cards and the nail page uses it for the seven

@@ -691,9 +691,6 @@ ul,ol{margin:0;padding:0;list-style:none;}
   object-position:center;
   border-bottom:1px solid var(--ink-line);
 }
-.card__image--left{object-position:left center;}
-.card__image--center{object-position:center;}
-.card__image--right{object-position:right center;}
 .section--light .card__image{border-bottom-color:rgba(142,98,92,.45);}
 
 /* A nail drawn in CSS — used as the small motif on design cards. */
@@ -1016,3 +1013,17 @@ ul,ol{margin:0;padding:0;list-style:none;}
 
 .social-row--two{grid-template-columns:repeat(2,1fr);}
 @media (max-width:760px){.social-row--two{grid-template-columns:1fr;}}
+
+/* Real tray photo, kept small because the supplied originals are low resolution. */
+.card__tray{
+  display:flex;align-items:center;gap:.9rem;
+  margin:1.25rem 0 0;padding-top:1.1rem;
+  border-top:1px solid var(--ink-line);
+}
+.card__tray img{width:7.5rem;height:auto;flex:none;}
+.card__tray figcaption{font-size:.8125rem;line-height:1.4;color:var(--muted-on-dark);}
+
+/* Seven sets leave a gap in the last row, so draw the lines per card
+   instead of showing the grid background through the empty cell. */
+.cards--sets{background:none;border:0;}
+.cards--sets .card{outline:1px solid var(--ink-line);}
