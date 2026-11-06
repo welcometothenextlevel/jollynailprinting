@@ -5,7 +5,7 @@ No build step, no dependencies — plain HTML, one stylesheet, one small JS file
 
 ```
 index.html        Home: hero, machine videos, how it works, the machine, designs, locations, socials
-nails.html        Nail designs: what it prints on, shapes, design families, aftercare
+nails.html        Nail designs: the seven sets, shapes, design families, aftercare
 locations.html    Machine locations, host-a-machine, and the rules & regulations (#rules)
 css/style.css     All styling
 js/main.js        Sticky header, mobile menu, scroll reveal (site works without it)
@@ -91,7 +91,10 @@ named cat-eye and white-base sets.
 These read as claims on the site and should match what the machines actually do:
 
 - Home page facts strip: **30 pieces** in a full set, **100+** designs, no booking, cash or card
-- "Sitting" spec: around **6 minutes** for a full 30-piece nail set
+- "Print time" spec: around **6 minutes** for a full 30-piece nail set
+- The machine prints onto artificial nail tips only (client, 6 November 2026). No fingers in
+  the machine and no nail prep. Keep it that way in any new copy.
+- Aftercare on `nails.html` is general press-on advice, not from the client. Confirm it with him.
 - Nothing on the site quotes a price. Add one if wanted — the facts strip is the natural spot.
 
 ## Custom domain
