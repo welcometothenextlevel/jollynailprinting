@@ -60,8 +60,9 @@ If a phone number should be shown too, add it to the **Contact** list in each fo
 
 First site, supplied by the client on 5 November 2026: Pacific Werribee, 250 Heaths
 Rd, Hoppers Crossing VIC 3029, near Sportsgirl (he wrote "hearths rd" and "sport
-girls"). It is marked "Coming soon" because he said the location is almost settled;
-change it to "Now printing" once the machine is running.
+girls"). "Coming soon" was removed on 6 November 2026 at the agency's request, so the badge
+now just reads "Hoppers Crossing". Change it to "Now printing" (drop `venue__status--soon`)
+once the machine is confirmed running.
 
 Status badge: `class="venue__status"` shows a green dot and "Now printing".
 Add `venue__status--soon` for a machine that is on the way, and change the
